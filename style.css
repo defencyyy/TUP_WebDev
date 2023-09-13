@@ -1,9 +1,11 @@
 /* Whole HTML Document */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
@@ -28,18 +30,19 @@ a,
 nav,
 .nav-links {
   display: flex;
+  background-color: pink;
 }
 
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 9vh;
 }
 
 .nav-links {
-  gap: 2rem;
+  gap: 1.5rem;
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 a {
@@ -55,25 +58,29 @@ a:hover {
   text-decoration-color: rgb(181, 181, 181);
 }
 
+/* Logo / TopLeft Area */
 .logo {
   font-size: 2rem;
+  font-family: 'Nabla', cursive;
+  font-style: oblique;
 }
 
 .logo:hover {
   cursor: default;
 }
 
-/* Hamburger Menu */
-
+/* Hamburger Nav */
 #hamburger-nav {
   display: none;
 }
 
+  /* Icon Position */
 .hamburger-menu {
   position: relative;
   display: inline-block;
 }
 
+  /* Icon Design */
 .hamburger-icon {
   display: flex;
   flex-direction: column;
@@ -83,6 +90,7 @@ a:hover {
   cursor: pointer;
 }
 
+  /* Icon Size */
 .hamburger-icon span {
   width: 100%;
   height: 2px;
@@ -90,6 +98,7 @@ a:hover {
   transition: all 0.3 ease-in-out;
 }
 
+/* Hamburger Menu */
 .menu-links {
   position: absolute;
   top: 100%;
@@ -116,7 +125,7 @@ a:hover {
 }
 
 .menu-links.open {
-  max-height: 300px;
+  max-height: 275px;
 }
 
 .hamburger-icon.open span:first-child {
