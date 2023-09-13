@@ -8,16 +8,33 @@
         <link rel = "stylesheet" href = "mediaqueries.css">
     </head>
     <body>
-        <nav id = "desktop-nav"></nav>
-        <div class ="logo"> Madz Amador </div>
-        <div>
-            <ul class = "nav-links">
-                <li><a href = "#about">About</a></li>
-                <li><a href = "#Experience">Experience</a></li>
-                <li><a href = "#Projects">Projects</a></li>
-                <li><a href = "#Contacts">Contacts</a></li>
-            </ul>
-        </div>
+        <nav id = "desktop-nav">
+            <div class ="logo"> Cy </div>
+            <div>
+                <ul class = "nav-links">
+                    <li><a href = "#about">About</a></li>
+                    <li><a href = "#Experience">Experience</a></li>
+                    <li><a href = "#Projects">Projects</a></li>
+                    <li><a href = "#Contacts">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id = "hamburger-nav">
+            <div class ="logo"> Cy </div>
+            <div class ="hamburger-menu">
+                <div class ="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href = "#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href = "#Experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href = "#Projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href = "#Contacts" onclick="toggleMenu()">Contacts</a></li>
+                </div>
+            </div>
+        </nav>
         <script src = "script.js"></script>
     </body>
 </html>
