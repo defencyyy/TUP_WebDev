@@ -5,11 +5,12 @@
 
 /* 
 Colors:
-#2c613c
-#e6e9f4
+#e4f1d6
+#9899dc
 #e6c7dc
-#d2c89d
-#dff0f1
+#dc9cdd
+#55af81
+#48755e
 */
 
 * {
@@ -19,7 +20,7 @@ Colors:
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #e0d8b5;
+  background-color: #e4f1d6;
 }
 
 html {
@@ -40,16 +41,18 @@ a,
 nav,
 .nav-links {
   display: flex;
-  background-color: pink;
+  background-color: #e6c7dc;
 }
 
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 8vh;
+  height: 6vh;
   position: sticky;
   top: 0;
   width: 100%;
+  border-bottom: #9c8394;
+  border-bottom-style: solid;
 }
 
 .nav-links {
@@ -118,9 +121,12 @@ a:hover {
 /* Hamburger Menu */
 .menu-links {
   position: absolute;
+  padding-left: 5px;
+  padding-right: 5px;
   top: 100%;
-  right: 0;
-  background-color: pink;
+  border-color: #9c8394;
+  border-top-style: none;
+  background-color: #e6c7dc;
   width: max-content;
   max-height: 0;
   overflow: hidden;
@@ -227,6 +233,7 @@ section {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
+
 }
 
 /* Icon */
@@ -243,6 +250,7 @@ section {
   display: flex;
   justify-self: center;
   gap: 1rem;
+
 }
 
 .btn {
