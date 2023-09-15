@@ -5,12 +5,12 @@
 
 /* 
 Colors:
-#e4f1d6
-#9899dc
-#e6c7dc
-#dc9cdd
-#55af81
-#48755e
+#e3d393
+#a0abda
+#8d9bd3
+#918450
+#4c4839
+#ced6f2
 */
 
 * {
@@ -20,7 +20,7 @@ Colors:
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #e4f1d6;
+  background-color: #f1e9d0;
 }
 
 html {
@@ -31,45 +31,42 @@ p {
   color: rgb(85, 85, 85);
 }
 
+/* Desktop Nav */
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 4rem ;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #704a65;
+  border-bottom: #ced6f2;
+  border-bottom-style: solid;
+}
+
+nav,
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  font-size: 1.2rem;
+}
+
+/*nav.active {
+  background-color: #04AA6D;
+}*/
+
 /* Transition */
 a,
 .btn {
   transition: all 300ms ease;
 }
 
-/* Desktop Nav */
-nav,
-.nav-links {
-  display: flex;
-  background-color: #e6c7dc;
-}
-
-nav {
-  justify-content: space-around;
-  align-items: center;
-  height: 6vh;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  border-bottom: #9c8394;
-  border-bottom-style: solid;
-}
-
-.nav-links {
-  gap: 1.5rem;
-  list-style: none;
-  font-size: 1.2rem;
-}
-
 a {
-  color: black;
+  color: rgb(255, 206, 70);
   text-decoration: none;
   text-decoration-color: white;
 }
-
-/*nav.active {
-  background-color: #04AA6D;
-}*/
 
 a:hover {
   color: gray;
