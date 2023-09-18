@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!DOCTYPE html
+
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -7,102 +8,132 @@
     <link rel = "stylesheet" href = "style.css">
     <link rel = "stylesheet" href = "mediaqueries.css">
   </head>
+
   <body>
-    <nav id = "desktop-nav">
-      <div class ="logo"> defenCy </div>
-      <div>
-          <ul class = "nav-links">
-            <li><a href = "#about">About</a></li>
-            <li><a href = "#Experience">Experience</a></li>
-            <li><a href = "#Projects">Projects</a></li>
-            <li><a href = "#Contacts">Contacts</a></li>
+    <header>
+      <div class="wrapper">
+        <!-- NAVIGATION -->
+        <nav>
+          <div class="nav-logo">defenCy</div>
+          <ul class="nav-links">
+            <li>
+              <a href="#About">About</a>
+            </li>
+            <li>
+              <a href="#Experience">Experience</a>
+            </li>
+            <li>
+              <a href="#Projects">Projects</a>
+            </li>
           </ul>
-      </div>
-    </nav>
-    <nav id = "hamburger-nav">
-      <div class ="logo"> defenCy </div>
-      <div class ="hamburger-menu">
-        <div class ="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href = "#about" onclick="toggleMenu()">About</a></li>
-          <li><a href = "#Experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href = "#Projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href = "#Contacts" onclick="toggleMenu()">Contacts</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id = "profile">
-      <div class = "section_pic-1.jpg">
-        <img src = "./assets/personal (1).jpg" alt = "Profile Picture"/>
-      </div>
-      <div class = "section_text">
-        <p class = "section_text_p1"> Hi, I am </p>
-        <h1 class = "title">Cyrus Nathaniel Florendo</h1>
-        <p class = "section_text_p2">a 3rd Year BSIS Student</p>
-      </div>
-      <div class = "btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/BSIS - Years .pdf')">
-          Download CV
-        </button>
-        <button class="btn btn-color-1" onclick="location.href=('#Contacts')">
-          Contact Info
-        </button>
-        <div id="socials-container">
-          <h3 class="My Socials">My Socials:</h3>
-          <img src="./assets/MicrosoftTeams-image (4).png" 
-          alt="My LinkedIn" 
-          class="icon"
-          onclick="location.href='https://linkedin.com'">
-          <img src="./assets/MicrosoftTeams-image (3).png" 
-          alt="My GitHub" 
-          class="icon"
-          onclick="location.href='https://github.com'">
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section_text_p1">Get to Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section_pic-container">
-          <img src="./assets/MicrosoftTeams-image.png" 
-          alt="About Icon"
-          class="about pic"/>
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <img src="./assets/MicrosoftTeams-image (5).png" 
-            alt="Experience Icon"
-            class="icon"/>
-            <h3>Experience: </h3>
-            <p>
-              3 years <br>
-              FrontEnd Developer
-            </p>
+        </nav>
+        
+        <!-- HERO SECTION -->
+        <div class="the-hero-section">
+          <div class="hero-img">
+            <img src="./assets/personal (3).jpg"
+            alt="Hero Image">
           </div>
-          <div class="details-container">
-            <img src="./assets/MicrosoftTeams-image (2).png" 
-            alt="Experience Icon"
-            class="icon"/>
-            <h3>Education: </h3>
-            <p>
-              B.S. in Information Systems <br>
-              2021-Current
-            </p>
+          <div class="hero-texts">
+            <p class="section_text_p1"> Hi, I am </p>
+            <h1 class="title">Cyrus Nathaniel Florendo</h1>
+            <p class="section_text_p2">a 3rd year BSIS student</p>
           </div>
-          <div class="text-container">
-            <p>
-              This is a paragraph that is paragprahing.
-              yhey whoo
-            </p>
+          <div class="hero-buttons">
+            <a href="#" class="btn-1">download cv</a>
+            <a href="#" class="btn-2">contact information</a>
+          </div>
+          <div class="hero-socials">
+            <h3>My Socials:</h3>
+            <h4>LinkedIn</h4>
+            <img src="./assets/logo-linkedin.png" 
+            alt="My LinkedIn" 
+            class="icon"
+            onclick="location.href='https://linkedin.com'">
+            <h4>GitHub</h4>
+            <img src="./assets/logo-git.png" 
+            alt="My GitHub" 
+            class="icon"
+            onclick="location.href='https://github.com'">
           </div>
         </div>
       </div>
-    </section>
-    <script src = "script.js"></script>
+    </header>
+  
+    <!-- END OF HEADER -->
+
+    <div class="wrapper">
+      <section class="the-know-more">
+        <div class="left">
+          <div class="know-education">
+            <div class="title">
+              <h2>Education</h2>
+            </div>
+            <div class="content">
+              <p>2020 - Current : Technological University of the Philippines</p>
+            </div>  
+            <img src="./assets/icon-graduation-hat-02.svg" alt="My Education">
+          </div>
+
+          <div class="know-skills">
+            <div class="title">
+              <h2>Relevant Skills</h2>
+            </div>
+            <div class="content">
+              <p>codecode</p>
+            </div>  
+            <img src="./assets/icon-terminal.svg" alt="My Skills">
+          </div>
+
+          <div class="know-languages">
+            <div class="title">
+              <h2>Languages</h2>
+            </div>
+            <div class="content">
+              <p>Read, Write, and Speak Fluent English and Filipino.</p>
+            </div>  
+            <img src="./assets/icon-pen-tool-02.svg" alt="My Languages">
+          </div>
+        </div>
+
+        <div class="right">
+          <h1>Personal Information</h1>
+          <div class="know-contact">
+            <div class="title">
+              <h2>Contact Information</h2>
+            </div>
+            <div class="content">
+              <p>Read, Write, and Speak Fluent English and Filipino.</p>
+            </div>  
+            <img src="./assets/icon-pen-tool-02.svg" alt="My Contacts">
+          </div>
+
+          <div class="know-biography">
+            <div class="title">
+              <h2>Bio</h2>
+            </div>
+            <div class="content">
+              <p>I am bla bla</p>
+            </div>  
+            <img src="./assets/icon-pen-tool-02.svg" alt="My Bio">
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- END OF KNOW MORE -->
+
+    <footer>
+      <div class="wrapper">
+        <div class="description">
+          <p>Made By Cyrus Nathaniel P. Florendo | © 2023</p>
+          <p>Made for WebDev | BSIS-NS-3A-M</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- END OF FOOTER -->
+
+    <script src="script.js"></script>
   </body>
 </html>
