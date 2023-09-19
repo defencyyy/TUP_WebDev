@@ -11,6 +11,7 @@
   --light-violet: #866db6;
   --turq-blue: #598eab;
   --dark-green: #1b647a;
+  --mint-green: #d8ead7;
 }
 
 *,
@@ -39,7 +40,7 @@ body {
 
 .btn {
   border-radius: 30px;
-  background: #B79F71;
+  background: #d8ead7;
   display: inline-block;
   padding: 15;
   color: #000000;
@@ -117,7 +118,7 @@ nav {
   color: var(--dirty-white);
 }
 
-nav ul {
+nav .nav-links {
   display: flex;
   align-items: center;
   gap: 58px;
@@ -125,7 +126,7 @@ nav ul {
   margin: 0;
 }
 
-nav ul li a:hover {
+nav .nav-links li a:hover {
   color: gray;
   text-decoration: underline;
   text-underline-offset: 1rem;
@@ -133,7 +134,7 @@ nav ul li a:hover {
   transition: all 300ms ease;
 }
 
-nav ul li a {
+nav .nav-links li a {
   color: #FFF;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
@@ -158,7 +159,7 @@ nav ul li a {
 .hero-section .right h1 {
   color: var(--dirty-white);
   font-family: 'Poppins', sans-serif;
-  font-size: 48px;
+  font-size: 50px;
   font-weight: 700;
   line-height: normal;
   margin-bottom: 0;
@@ -187,5 +188,50 @@ nav ul li a {
 }
 
 .hero-socials {
-  display: none;
+  display: flex;
+  margin-top: 100px;
+  position: absolute;
+  align-self: right;
+  width: 759px;
+  height: 100px;
+  border-radius: 20px 0px 0px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.00);
+  background: #DEDCBF;
+  box-shadow: 10px 14px 74px 2px rgba(0, 0, 0, 0.65);
+}
+
+.hero-socials h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  color: #443f4a;
+  align-self: center;
+  margin: 20px; 
+}
+
+.hero-socials .content h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.hero-socials img { 
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+
+.hero-socials .content {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid #B79F71;
+  background: #241D4D;
+  padding: 5px 20px 5px 20px;
+  margin: 10px 5px 10px 5px;
+}
+
+.hero-socials .content:hover {
+  cursor: pointer;
 }
