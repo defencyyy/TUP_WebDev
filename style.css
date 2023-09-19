@@ -42,7 +42,7 @@ body {
   border-radius: 30px;
   background: #d8ead7;
   display: inline-block;
-  padding: 15;
+  padding: 15px;
   color: #000000;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
@@ -50,7 +50,7 @@ body {
   font-weight: 700;
   letter-spacing: 1.6px;
   position: relative;
-  margin-top: 40px;
+  margin: 40px 10px;
 }
 
 .btn.icon-cv::before {
