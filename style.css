@@ -50,7 +50,7 @@ html {
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  background-color: var(--dark-violet);
+  background: linear-gradient(180deg, #241D4D 40%, #090909 100%);
   color: var(--dirty-white)
 }
 
@@ -316,7 +316,7 @@ section {
   width: 100%;
   height: 116px;
   background: linear-gradient(180deg, #25456A 0%, #1B647A 100%);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px 0px rgba(61, 60, 60, 0.25);
   border-radius: 5px;
 }
 
@@ -328,6 +328,7 @@ section {
   font-weight: 700;
   line-height: normal;
   margin: 0;
+  padding-top: 15px;
 }
 
 .know-more h3 {
@@ -345,13 +346,17 @@ section {
   margin: 12px 0;
 }
 
-.know-more img {
+.know-title img {
+  margin: 10px 20px;
   width: 70px;
   height: 70px;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
 }
 
 .know-title {
   display: flex;
+  text-align: center;
 }
 
 .know-bg {
@@ -366,6 +371,9 @@ section {
   display: flex;
   margin: 50px;
   padding-top: 100px;
+}
+.know-more .content {
+  display: relative;
 }
 
 .know-education {
