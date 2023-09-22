@@ -50,7 +50,7 @@ html {
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(180deg, #241D4D 40%, #090909 100%);
+  background: linear-gradient(180deg, #242424 40%, #111111 100%);
   color: var(--dirty-white)
 }
 
@@ -118,9 +118,11 @@ body {
 
 header {
   margin: 0;
-  background: linear-gradient(180deg, #25456A 0%, #241D4D 100%);
+  background: url(/assets/header-bg-1.png);
   height: 100vh;
-  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
 nav {
@@ -145,29 +147,30 @@ nav {
 
 .nav-logo:hover {
   cursor: default;
-  filter: invert(100%);
-  -webkit-filter: invert(100%);
+  color: #ff3c78;
   transition: ease 2s;
 }
 
 nav .nav-links {
   display: flex;
   align-items: center;
+  text-shadow: 1px 1px 7px #ffffff;
   gap: 58px;
   list-style: none;
+  letter-spacing: 0.5px;
   margin: 0;
 }
 
 nav .nav-links li a:hover {
-  color: gray;
+  color: white;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-decoration-color: #ff3c78;
   transition: all 300ms ease;
 }
 
 nav .nav-links li a {
-  color: #FFF;
+  color: rgb(32, 32, 32);
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   text-decoration: none;
