@@ -511,4 +511,13 @@ section {
   width: 30%;
   padding-top: 100px;
   min-height: 100vh;
+  text-align: center;
+}
+
+/* Projects */
+
+.project .project-img img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
 }
