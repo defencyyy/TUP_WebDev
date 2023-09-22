@@ -35,8 +35,50 @@
 .hero-section .show {
   opacity: 1;
   filter: blur(0);
-  transform: translateY(-1%);
+  transform: translateY(0%);
   transform: translateX(0%);
+}
+
+.know-skills .right {
+  display: flex;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0%);
+  transform: translateY(0%);
+}
+
+.know-skills .right .show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0%);
+}
+
+.slogo:nth-child(2) {
+  padding-top: 50px;
+  transition-delay: 200ms;
+}
+
+.slogo:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+.slogo:nth-child(4) {
+  padding-top: 50px;
+  transition-delay: 600ms;
+}
+
+.slogo:nth-child(5) {
+  transition-delay: 800ms;
 }
 
 /* HTML */
@@ -329,6 +371,24 @@ section {
   border-radius: 5px;
 }
 
+.know-more {
+  min-height: 100vh;
+}
+
+.know-bg .know-title {
+  display: flex;
+  text-align: center;
+  font-family: 'Mooli', sans-serif;
+  color: pink;
+  font-size: 30px;
+  font-style: bold;
+  margin: 12px;
+}
+
+.know-more .content {
+  display: relative;
+}
+
 .know-more img {
   filter: drop-shadow(8px 8px 10px black);
   position: relative;
@@ -348,14 +408,6 @@ section {
   padding-top: 15px;
 }
 
-.know-more h3 {
-  color: #FFF;
-  font-family: 'Poppins', 'sans-serif';
-  font-size: 30px;
-  font-style: bold;
-  margin: 12px 0;
-}
-
 .know-more p {
   color: #FFF;
   font-family: 'Poppins', 'sans-serif';
@@ -363,17 +415,12 @@ section {
   margin: 12px 0;
 }
 
-.know-title img {
+.know-more .know-icons {
   margin: 10px 20px;
   width: 70px;
   height: 70px;
   filter: invert(100%);
   -webkit-filter: invert(100%);
-}
-
-.know-title {
-  display: flex;
-  text-align: center;
 }
 
 .know-bg {
@@ -387,10 +434,18 @@ section {
 .know-skills {
   display: flex;
   margin: 50px;
-  padding-top: 100px;
+  padding-top: 300px;
+  min-height: 100vh;
 }
-.know-more .content {
-  display: relative;
+
+.know-skills .right {
+  padding-top: 100px;
+  padding-left: 150px;
+}
+
+.know-skills .right img {
+  width: 150px;
+  align-content: center;
 }
 
 .know-education {
