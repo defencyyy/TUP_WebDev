@@ -176,15 +176,24 @@
         <h1>Projects</h1>
       </div>
       <div class="project-content">
-        <h2>Project Name</h2>
-        <p>description</p>
+        <li>
+          <h2>Project Name</h2>
+          <p>wow</p>
+        </li>
+        <li>
+          <h2>Project Name</h2>
+          <p>wow</p>
+        </li>
+        <li>
+          <h2>Project Name</h2>
+          <p>wow</p>
+        </li>
       </div>
       <div class="projects">
         <div class="images">
-          <div class="content"></div>
-          <img src="/assets/personal (3).jpg" alt="">
-          <img src="/assets/header-bg.jpg" alt="">
-          <img src="/assets/project - Copy.jpg" alt="">
+          <img src="/assets/personal (3).jpg" alt="You are my enemy">
+          <img src="/assets/header-bg.jpg" alt="Project 2">
+          <img src="/assets/project - Copy.jpg" alt="Project 222">
         </div>
         <div class="slide left" onclick="side_slide(-1)">
           <span class="fa fa-angle-left"></span>
@@ -223,9 +232,10 @@
 
     <!-- END OF FOOTER -->
 
+    <!-- Project Sliders -->>
     <script>
       var indexValue = 1;
-      showImg(indexValue);
+      showImg(indexValue);  
       function btm_slide(e) {showImg(indexValue = e);}
       function side_slide(e) {showImg(indexValue += e);}
       function showImg(e) {
@@ -242,7 +252,6 @@
         }
         img[indexValue-1].style.display = "block";
         sliders[indexValue-1].style.background = "white";
-
       }
     </script>
     <script src="script.js" type="module"></script>

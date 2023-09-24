@@ -536,9 +536,10 @@ section {
 
 .project-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding-bottom: 20px;
   text-align: center;
+  list-style: none;
 }
 
 .projects {
@@ -556,7 +557,10 @@ section {
 .images img {
   height: 100%;
   width: 100%;
+  opacity: 1;
+  display: block;
 }
+
 
 .btm-sliders {
   position: absolute;
