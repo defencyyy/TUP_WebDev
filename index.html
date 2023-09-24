@@ -7,16 +7,10 @@
     <title>Cy's Portfolio</title>
     <link rel = "stylesheet" href = "style.css">
     <link rel = "stylesheet" href = "mediaqueries.css">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-
   <body>
     <header>
-      <!--
-        <div class="top-picture">
-        <img src="./assets/personal (3).jpg"
-        alt="Hero Image">
-      </div>
-      -->
       <div class="wrapper">
         <!-- NAVIGATION -->
         <nav>
@@ -43,13 +37,12 @@
         <!-- HERO SECTION -->
         <div class="hero-section">
           <div class="left">
-            <img src="./assets/personal (3).jpg"
-            alt="Hero Image">
+            <h1>Cyrus<br>Nathaniel<br>Florendo</h1>
           </div>
           <div class="right">
-            <p class="content"> Welcome, I am </p>
-            <h1 class="title">Cyrus Nathaniel Florendo</h1>
-            <p class="content">a 3rd year BSIS Student</p>
+            <h2>I am a</h2>
+            <h1>3rd-Year BSIS Student</h1>
+            <h2>Programmer, Analyst</h2>
             <div class="hero-buttons">
               <a href="#" class="btn cv icon-cv">
                 download cv
@@ -59,7 +52,7 @@
               </a>
             </div>
             <div class="hero-socials">
-              <h3>Socials:</h3> 
+              <h3>My Socials:</h3> 
               <a href="https://linkedin.com" target="_blank">
                 <div class="content">
                   <h4>LinkedIn</h4>
@@ -88,56 +81,124 @@
     <div class="wrapper">
       <section class="know-more">
         <div class="know-about">
-          <div class="bg">
+          <img class="about hidden" src="./assets/personal (4).png"
+          alt="Image of myself">
+          <div class="bg hidden-1">
             <h1>About Me</h1>
+            <p>Get to know a bit more about myself</p>
           </div>
         </div>
-          <div class="know-skills">
+        <div class="know-skills">
+          <div class="left hidden-1">
             <div class="know-title">
-              <img src="./assets/icon-terminal.svg" alt="My Skills">
-              <div class="know-bg"><h2>Relevant Skills</h2></div>
+              <img class ="know-icons" src="./assets/icon-terminal.svg" alt="My Skills">
+              <div class="know-bg">
+                <h2>Relevant Skills</h2>
+              </div>
             </div>
             <div class="content">
               <h3>Programming</h3>
-              <p>Knowledgeable in Python, C, C++<br>
-                Knowledgeable in HTML, CSS<br>
-                Basic Skills in SQL</p>
+                <li>Knowledgeable in Python, C, C++</li>
+                <li>Knowledgeable in HTML, CSS</li>
+                <li>Basic Skills in SQL</li>
               <h3>Editing</h3>
-              <p>Intermediate Skills in Video and Photo Editing</p>
+                <li>Intermediate Skills in Video and Photo Editing</li>
               <h3>Software</h3>
-              <p>Knowledgeable in Sheets/Excel, Docs/Word, Powerpoint, Canva</p>
+                <li>Knowledgeable in Sheets/Similar, Docs/Similar, Powerpoint/Similar</li>
             </div>
           </div>
-          <div class="know-education">
+          <div class="right">
+            <div class="slogo hidden">
+              <img src="/assets/icon-p-c-original.svg" alt="">
+            </div>
+            <div class="slogo hidden">
+              <img src="/assets/icon-p-css3-original.svg" alt="">
+            </div>
+            <div class="slogo hidden">
+              <img src="/assets/icon-p-html5-original.svg" alt="">
+            </div>
+            <div class="slogo hidden">
+              <img src="/assets/icon-p-mysql-original.svg" alt="">
+            </div>
+            <div class="slogo hidden">
+              <img src="/assets/icon-p-python-original.svg" alt=""> 
+            </div>
+          </div>
+        </div>
+        <div class="know-education">
+          <div class="left hidden">
+            <img src="./assets/school-picture.jpg" alt="tup picture">
+          </div>
+          <div class="right hidden-1">
             <div class="know-title">
-              <img src="./assets/icon-graduation-hat-02.svg" alt="My Education">
+              <img class ="know-icons" src="./assets/icon-graduation-hat-02.svg" alt="My Education">
               <div class="know-bg"><h2>Education</h2></div>
             </div>
             <div class="content">
-              <p>2020 - Current : Technological University of the Philippines</p>
+              <h3>2020 - Current :<br>Bachelor of Science in Information Systems</h3>
+              <li>Technological University of the Philippines - Manila</li>
+              <h3>2018 - 2020 :<br>Information and Communications Technology (ICT)</h3>
+              <li>University of Perpetual Help System Dalta - Las Piñas</li>
             </div>  
           </div>
-          <div class="know-languages">
+        </div>
+        <div class="know-languages">
+          <div class="middle hidden-1">
             <div class="know-title">
-              <img src="./assets/icon-pen-tool-02.svg" alt="My Languages">
+              <img class ="know-icons" src="./assets/icon-pen-tool-02.svg" alt="My Languages">
               <div class="know-bg"><h2>Languages</h2></div>
             </div>
             <div class="content">
-              <p>Read, Write, and Speak Fluent English and Filipino.</p>
+              <p>Reads, writes, and speaks fluent English and Filipino.</p>
             </div>  
           </div>
-          <div class="know-biography">
+        </div>
+        <div class="know-biography">
+          <div class="middle hidden-1">
             <div class="know-title">
-              <img src="./assets/icon-list.svg" alt="My Bio">
+              <img class ="know-icons" src="./assets/icon-list.svg" alt="My Bio">
               <div class="know-bg"><h2>Biography</h2></div>
             </div>
             <div class="content">
-              <p>I am bla bla</p>
+              <p>A 20-year-old third-year student that is pursuing my passion in being a 
+                programmer with database specialty.
+                <br><br>Being flexible, adaptable and willing-to-learn is a few of my key 
+                strengths that allow me better myself and those I am around with.
+              </p>
             </div>  
           </div>
         </div>
       </section>
     </div>  
+
+    <div class="wrapper-project">
+      <div class="project-heading">
+        <h1>Projects</h1>
+      </div>
+      <div class="project-content">
+        <h2>Project Name</h2>
+        <p>description</p>
+      </div>
+      <div class="projects">
+        <div class="images">
+          <div class="content"></div>
+          <img src="/assets/personal (3).jpg" alt="">
+          <img src="/assets/header-bg.jpg" alt="">
+          <img src="/assets/project - Copy.jpg" alt="">
+        </div>
+        <div class="slide left" onclick="side_slide(-1)">
+          <span class="fa fa-angle-left"></span>
+        </div>
+        <div class="slide right" onclick="side_slide(1)">
+          <span class="fa fa-angle-right"></span>
+        </div>
+        <div class="btm-sliders">
+          <span onclick="btm_slide(1)"></span>
+          <span onclick="btm_slide(2)"></span>
+          <span onclick="btm_slide(3)"></span>
+        </div>
+      </div>
+    </div>
 
     <!-- END OF KNOW MORE -->
 
@@ -162,6 +223,28 @@
 
     <!-- END OF FOOTER -->
 
+    <script>
+      var indexValue = 1;
+      showImg(indexValue);
+      function btm_slide(e) {showImg(indexValue = e);}
+      function side_slide(e) {showImg(indexValue += e);}
+      function showImg(e) {
+        var i;
+        const img = document.querySelectorAll('.images img');
+        const sliders  = document.querySelectorAll('.btm-sliders span');
+        if (e > img.length) {indexValue = 1}
+        if(e < 1) {indexValue = img.length}
+        for (i = 0; i < img.length; i++) {
+          img[i].style.display = "none";
+        }
+        for (i = 0; i < sliders.length; i++) {
+          sliders[i].style.background = "rgba(255, 255, 255, 0.1)";
+        }
+        img[indexValue-1].style.display = "block";
+        sliders[indexValue-1].style.background = "white";
+
+      }
+    </script>
     <script src="script.js" type="module"></script>
   </body>
 </html>
