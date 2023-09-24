@@ -7,6 +7,7 @@
     <title>Cy's Portfolio</title>
     <link rel = "stylesheet" href = "style.css">
     <link rel = "stylesheet" href = "mediaqueries.css">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <header>
@@ -148,7 +149,7 @@
               <div class="know-bg"><h2>Languages</h2></div>
             </div>
             <div class="content">
-              <p>Read, Write, and Speak Fluent English and Filipino.</p>
+              <p>Reads, writes, and speaks fluent English and Filipino.</p>
             </div>  
           </div>
         </div>
@@ -159,12 +160,42 @@
               <div class="know-bg"><h2>Biography</h2></div>
             </div>
             <div class="content">
-              <p>I am bla bla</p>
+              <p>A 20-year-old third-year student that is pursuing my passion in being a 
+                programmer with database specialty.
+                <br><br>Being flexible, adaptable and willing-to-learn is a few of my key 
+                strengths that allow me better myself and those I am around with.
+              </p>
             </div>  
           </div>
         </div>
       </section>
     </div>  
+    <div class="body_project">
+      <div class="wrapper_project">
+        <i id="left" class="fa fa-angle-left"></i>
+        <div class="project-heading">
+          <h1>Projects</h1>
+        </div>
+        <ul class="carousel">
+          <li class="card">
+            <div class="img"><img src="assets/personal (1).jpg" alt="img" draggable="false"></div>
+            <h2>Project 1</h2>
+            <span>Sales Manager</span>
+          </li>
+          <li class="card">
+            <div class="img"><img src="assets/personal (1).jpg" alt="img" draggable="false"></div>
+            <h2>Project 2</h2>
+            <span>Web Developer</span>
+          </li>
+          <li class="card">
+            <div class="img"><img src="assets/personal (1).jpg" alt="img" draggable="false"></div>
+            <h2>Project 3</h2>
+            <span>Online Teacher</span>
+          </li>
+        </ul>
+        <i id="right" class="fa fa-angle-right"></i>
+      </div>
+    </div>
 
     <!-- END OF KNOW MORE -->
 
@@ -189,6 +220,28 @@
 
     <!-- END OF FOOTER -->
 
+    <!-- Project Sliders -->>
+    <script>
+      var indexValue = 1;
+      showImg(indexValue);  
+      function btm_slide(e) {showImg(indexValue = e);}
+      function side_slide(e) {showImg(indexValue += e);}
+      function showImg(e) {
+        var i;
+        const img = document.querySelectorAll('.images img');
+        const sliders  = document.querySelectorAll('.btm-sliders span');
+        if (e > img.length) {indexValue = 1}
+        if(e < 1) {indexValue = img.length}
+        for (i = 0; i < img.length; i++) {
+          img[i].style.display = "none";
+        }
+        for (i = 0; i < sliders.length; i++) {
+          sliders[i].style.background = "rgba(255, 255, 255, 0.1)";
+        }
+        img[indexValue-1].style.display = "block";
+        sliders[indexValue-1].style.background = "white";
+      }
+    </script>
     <script src="script.js" type="module"></script>
   </body>
 </html>
