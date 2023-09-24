@@ -503,12 +503,102 @@ section {
 
 .know-languages .middle {
   margin: auto;
-  width: 70%;
+  width: 80%;
 }
 
 .know-biography {
   margin: auto;
-  width: 30%;
+  width: 60%;
   padding-top: 100px;
   min-height: 100vh;
+  text-align: center;
+}
+
+/* Projects */
+
+.wrapper-project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 120vh;
+  margin: 20px 0;
+  text-align: center;
+  background: linear-gradient(180deg, #25456A 0%, #D8EAD7 100%);
+}
+
+.project-heading h1 {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Aref Ruqaa Ink', serif;
+  position: relative;
+  font-size: 60px;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
+  text-align: center;
+  list-style: none;
+}
+
+.projects {
+  height: 750px;
+  width: 1300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.projects .images {
+  height: 100%;
+  width: 100%;
+}
+
+.images img {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  display: block;
+}
+
+
+.btm-sliders {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  display: flex;
+  transform: translateX(-50%);
+}
+
+.btm-sliders span {
+  height: 15px;
+  width: 50px;
+  border: 2px solid white;
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+.projects .slide {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  border: 2px solid #FFF;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.projects .slide:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.slide span {
+  font-size: 35px;
+  color: #FFF;
+  line-height: 41px;
+}
+
+.projects .right {
+  right: 0;
 }
