@@ -515,86 +515,108 @@ section {
 }
 
 /* Projects */
-
-.wrapper-project {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  min-height: 120vh;
-  margin: 20px 0;
-  text-align: center;
-  background: linear-gradient(180deg, #25456A 0%, #D8EAD7 100%);
-}
-
-.project-heading h1 {
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: 'Aref Ruqaa Ink', serif;
-  position: relative;
-  font-size: 60px;
-}
-
-.project-content {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 20px;
-  text-align: center;
-}
-
-.projects {
-  height: 750px;
-  width: 1300px;
-  overflow: hidden;
+.wrapper_project {
+  max-width: 1920px;
+  width: 100%;
   position: relative;
 }
 
-.projects .images {
-  height: 100%;
-  width: 100%;
-}
-
-.images img {
-  height: 100%;
-  width: 100%;
-}
-
-.btm-sliders {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  display: flex;
-  transform: translateX(-50%);
-}
-
-.btm-sliders span {
-  height: 15px;
-  width: 50px;
-  border: 2px solid white;
-  margin: 0 3px;
-  cursor: pointer;
-}
-
-.projects .slide {
-  position: absolute;
+.wrapper_project i {
   top: 50%;
-  transform: translateY(-50%);
-  width: 45px;
-  border: 2px solid #FFF;
-  background: rgba(255, 255, 255, 0.1);
+  height: 50px;
+  width: 50px;
   cursor: pointer;
-  margin: 0 10px;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
 }
 
-.projects .slide:hover {
-  background: rgba(255, 255, 255, 0.2);
+.wrapper_project i:active{
+  transform: translateY(-50%) scale(0.85);
 }
 
-.slide span {
-  font-size: 35px;
-  color: #FFF;
-  line-height: 41px;
+.wrapper_project i:first-child{
+  left: -22px;
 }
 
-.projects .right {
-  right: 0;
+.wrapper_project i:last-child{
+  right: -22px;
+}
+
+.wrapper_project .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel .card {
+  scroll-snap-align: start;
+  height: 1200px;
+  width: 900px;
+  list-style: none;
+  background: #fff;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+.carousel .card .img {
+  background: #8B53FF;
+  height: 148px;
+  width: 148px;
+}
+
+.card .img img {
+  width: 1000px;
+  height: 700px;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+
+.carousel .card h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+}
+
+.carousel .card span {
+  color: #6A6D78;
+  font-size: 1.31rem;
 }
