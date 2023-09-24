@@ -517,93 +517,70 @@ section {
 /* Projects */
 
 .wrapper-project {
-  max-width: 1920px;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
 }
 
 .projects {
+  height: 750px;
+  width: 1300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.projects .images {
+  height: 100%;
+  width: 100%;
+}
+
+.images img {
+  height: 100%;
+  width: 100%;
+}
+
+.btn-sliders {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
   display: flex;
-  object-fit: cover;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 0 35px;
-  background: linear-gradient(to right bottom, #25456A 0%, #D8EAD7 100%);
+  transform: translateX(-50%);
 }
 
-.wrapper-project .projects {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: calc((100% / 3) - 12px);
-  gap: 16px;
-}
-
-.projects :where(.project, .project-img) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.projects .project {
-  height: 342px;
-  list-style: none;
-  background: #FFF;
-  border-radius: 8px;
-  display: flex;
-  padding-bottom: 15px;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
-}
-
-.project .project-img img {
-  width: 140px;
-  height: 140px;
-  object-fit: cover;
-  justify-content: center;
-  align-items: center;
-  border: 4px solid var(--mint-green);
-}
-
-.project h1 {
-  font-size: 2rem;
-  display: flex;
-  color: #000;
-}
-
-.project h2 {
-  font-weight: 500;
-  font-size: 1.56rem;
-  margin: 3 0px 0 5px;
-  color: #000;
-}
-
-.project p {
-  color: #6a6d78;
-  font-size: 1.31rem;
-}
-
-.wrapper-project .arrows {
-  height: 50px;
+.btn-sliders span {
+  height: 15px;
   width: 50px;
-  background: #fff;
-  text-align: center;
-  line-height: 50px;
-  border-radius: 50%;
+  border: 2px solid white;
+  margin: 0 3px;
   cursor: pointer;
+}
+
+.btn-sliders span:hover {
+  background: white;
+}
+
+.projects .slide {
   position: absolute;
   top: 50%;
-  transform: translateY(50%);
-  box-shadow: 0 3px 6px #000;
+  transform: translateY(-50%);
+  width: 45px;
+  border: 2px solid #FFF;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
 }
 
-.wrapper-project .arrows:first-child {
-  left: -22px;
+.projects .slide:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
-.wrapper-project .arrows:last-child {
-  right: -22px;
+.slide span {
+  font-size: 35px;
+  color: #FFF;
+  line-height: 41px;
+}
+
+.projects .right {
+  right: 0;
 }
