@@ -536,7 +536,7 @@ section {
   display: flexbox;
   font-family: 'Croissant One', 'sans-serif';
   text-align: center;
-  font-size: 48px;
+  font-size: 70px;
   color: var(--dirty-white);
 }
 
@@ -613,7 +613,7 @@ section {
   height: 900px;
   width: 1100px;
   list-style: none;
-  background: linear-gradient(180deg, #b1b1b1 0%, #3a3a3a 100%);
+  background: var(--light-brown);
   padding-bottom: 15px;
   flex-direction: column;
   border-radius: 8px;
@@ -642,4 +642,142 @@ section {
 .carousel .card span {
   color: #c7c7c7;
   font-size: 1.31rem;
+}
+
+/* Experiences */
+.experience {
+  text-align: center;
+  padding-top: 50px;
+  min-height: 100vh;
+}
+
+.experience .title {
+  font-family: 'Croissant One', 'sans-serif';
+  text-align: center;
+  font-size: 48px;
+  color: var(--dirty-white);
+}
+
+/* Footer */
+footer {
+  background: url("/assets/header-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  object-fit: cover;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 105vh;
+  padding-top: 30px;
+}
+
+.know-contact .title {
+  border: var(--turq-blue);
+  border: solid;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  width: 700px;
+  border-radius: 50px;
+}
+
+.know-contact h1 {
+  color: var(--dirty-white);
+  font-family: 'Croissant One', 'sans-serif';
+  font-size: 55px;
+  margin: 15px;
+  text-align: center;
+}
+
+.know-contact .content {
+  padding: 50px;
+  display: flex;
+}
+
+.know-contact .left {
+  width: 70%;
+  height: 40%;
+  margin: 50px;
+  border-radius: 10px;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background: var(--mint-green);
+  color: var(--dark-violet);
+  opacity: 0.9;
+}
+
+.know-contact .left h3 {
+  font-size: 30px;
+  font-family: 'Aref Ruqaa Ink', serif;
+  text-align: center;
+}
+
+.know-contact .left h4 {
+  font-family: "Mooli";
+  font-size: 20px;
+}
+
+.know-contact .right {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.know-contact form {
+  background: var(--mint-green);
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 4rem;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.know-contact form h3 {
+  font-family: 'Aref Ruqaa Ink', serif;
+  text-align: center;
+  color: var(--dark-violet);
+  font-weight: 800;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.know-contact input, form, textarea {
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background: var(--dirty-white);
+  font-size: 16px;
+}
+
+.know-contact button {
+  padding: 15px;
+  background: var(--dark-green);
+  color: var(--dirty-white);
+  font-size: 16px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 30px;
+  font-family: "Mooli", sans-serif;
+}
+
+.know-contact label {
+  color: var(--brown-green);
+  padding: 5px;
+}
+
+.credits {
+  display: flex;
+  margin: 0 20px;
+  justify-content: space-between;
+  font-family: "Mooli", sans-serif;
+  font-size: 18px;
 }
