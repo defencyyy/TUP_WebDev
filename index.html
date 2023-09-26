@@ -7,13 +7,14 @@
     <title>Cy's Portfolio</title>
     <link rel = "stylesheet" href = "style.css">
     <link rel = "stylesheet" href = "mediaqueries.css">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <header>
       <div class="wrapper">
         <!-- NAVIGATION -->
         <nav>
-          <div class="nav-logo">defenCy</div>
+          <a href="#Home"><div class="nav-logo">defenCy</div></a>
           <ul class="nav-links">
             <li>
               <a href="#Home">Home</a>
@@ -22,10 +23,10 @@
               <a href="#About">About</a>
             </li>
             <li>
-              <a href="#Experience">Experience</a>
+              <a href="#Projects">Projects</a>
             </li>
             <li>
-              <a href="#Projects">Projects</a>
+              <a href="#Experience">Experience</a>
             </li>
             <li>
               <a href="#Contact">Contact</a>
@@ -34,7 +35,7 @@
         </nav>
         
         <!-- HERO SECTION -->
-        <div class="hero-section">
+        <div id="Home" class="hero-section">
           <div class="left">
             <h1>Cyrus<br>Nathaniel<br>Florendo</h1>
           </div>
@@ -78,13 +79,15 @@
     <!-- END OF HEADER -->
 
     <div class="wrapper">
-      <section class="know-more">
+      <section id="About" class="know-more">
         <div class="know-about">
           <img class="about hidden" src="./assets/personal (4).png"
           alt="Image of myself">
           <div class="bg hidden-1">
             <h1>About Me</h1>
-            <p>Get to know a bit more about myself</p>
+            <div class="content">
+              <p>Get to know a bit more about myself</p>
+            </div>
           </div>
         </div>
         <div class="know-skills">
@@ -148,7 +151,7 @@
               <div class="know-bg"><h2>Languages</h2></div>
             </div>
             <div class="content">
-              <p>Read, Write, and Speak Fluent English and Filipino.</p>
+              <p>Reads, writes, and speaks fluent English and Filipino.</p>
             </div>  
           </div>
         </div>
@@ -159,7 +162,11 @@
               <div class="know-bg"><h2>Biography</h2></div>
             </div>
             <div class="content">
-              <p>I am bla bla</p>
+              <p>A 20-year-old third-year student that is pursuing my passion in being a 
+                programmer with specialty in database programming.
+                <br><br>Being flexible, adaptable and willing-to-learn is a few of my key 
+                strengths that allow me better myself and those I am around with.
+              </p>
             </div>  
           </div>
         </div>
@@ -168,27 +175,139 @@
 
     <!-- END OF KNOW MORE -->
 
-    <footer>
+    <div id="Projects" class="body_project">
+      <div class="wrapper_project">
+        <i id="left" class="fa fa-angle-left"></i>
+        <h1 class="hidden-1">Projects</h1>
+        <ul class="carousel">
+          <li class="card">
+            <div class="img"><img src="assets/project-1.png" alt="Project 1" draggable="false"></div>
+            <h2>Resort Booking Simulation</h2>
+            <span>A C++ program that lets the user simulate a given amount of time when<br>
+              managing the resort called Rosas Resort.
+            </span>
+          </li>
+          <li class="card">
+            <div class="img"><img src="assets/project-2.png" alt="Project 2" draggable="false"></div>
+            <h2>Computer Management System</h2>
+            <span>A python program that allows the user to simulate running a computer<br>
+              cafe with the known main features.
+            </span>
+          </li>
+          <li class="card">
+            <div class="img"><img src="assets/project-3.jpg" alt="Project 3" draggable="false"></div>
+            <h2>ATM Simulation (database)</h2>
+            <span>A project to-be-made that will help me understand database and<br>
+              using python as a whole. (An ATM simulation that features the main<br>
+              processes with database and UI)
+            </span>
+          </li>
+        </ul>
+        <i id="right" class="fa fa-angle-right"></i>
+      </div>
+    </div>
+
+    <!-- END OF PROJECTS -->
+
+    <div class="wrapper">
+      <section id="Experience" class="experience hidden-1">
+        <div class="title">
+          <h1>Experiences</h1>
+        </div>
+        <div class="content">
+          <h3>Coming Soon.</h3>
+        </div>
+      </section>
+    </div>
+
+
+    <footer id="Contact">
       <div class="wrapper">
         <div class="know-contact">
-          <div class="title">
-            <h2>Contact Information</h2>
+          <div class="title hidden-1">
+            <h1>Contact Information</h1>
           </div>
           <div class="content">
-            <h3>Emails:</h3>
-            <p>Work Email : cysness@gmail.com</p>
-            <p>School Email : cyrusnathaniel.florendo@tup.edu.ph</p>
-          </div>  
-        </div>
-        <div class="description">
-          <p>Made By Cyrus Nathaniel P. Florendo | © 2023</p>
-          <p>Made for WebDev | BSIS-NS-3A-M</p>
+            <div class="left hidden">
+              <h3>Emails:</h3>
+              <h4><i class="fa-solid fa-briefcase"></i> Work Email :</h4>
+              <p>cysness@gmail.com</p>
+              <h4><i class="fa-solid fa-graduation-cap"></i> University Email :</h4>
+              <p>cyrusnathaniel.florendo@tup.edu.ph</p>
+            </div>  
+            <div class="right hidden">
+              <form onsubmit="sendEmail(); reset(); return false;">
+                <h3>Contact Me:</h3>
+                <label for="name"><i class="fa-solid fa-user"></i> Name</label>
+                <input type="text" id="name" required>
+                <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
+                <input type="email" id="email" required>
+                <label for="phone"><i class="fa-solid fa-phone"></i> Phone</label>
+                <input type="text" id="phone">
+                <label for="message"><i class="fa-regular fa-comment"></i> Message</label>
+                <textarea id="message" rows="5" required></textarea>
+                <button type="submit"><i class="fa-solid fa-check"></i> Submit</button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
+    <div class="wrapper">
+      <div class="credits">
+        <div class="left">
+          <p>Made By Cyrus Nathaniel P. Florendo | BSIS-NS-3A-M</p>
+        </div>
+        <div class="right">
+          <p>Made for WebDev | © 2023</p>
+        </div>
+      </div>
+    </div>
+
 
     <!-- END OF FOOTER -->
 
+    <script>
+      var indexValue = 1;
+      showImg(indexValue);
+      function btm_slide(e) {showImg(indexValue = e);}
+      function side_slide(e) {showImg(indexValue += e);}
+      function showImg(e) {
+        var i;
+        const img = document.querySelectorAll('.images img');
+        const sliders  = document.querySelectorAll('.btm-sliders span');
+        if (e > img.length) {indexValue = 1}
+        if(e < 1) {indexValue = img.length}
+        for (i = 0; i < img.length; i++) {
+          img[i].style.display = "none";
+        }
+        for (i = 0; i < sliders.length; i++) {
+          sliders[i].style.background = "rgba(255, 255, 255, 0.1)";
+        }
+        img[indexValue-1].style.display = "block";
+        sliders[indexValue-1].style.background = "white";
+
+      }
+    </script>
+    <script src="https://kit.fontawesome.com/e2d5898c84.js" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript">
+      function sendEmail() {
+        Email.send({
+          secureToken: "eda24c39-51d9-4e40-849d-dad0b1f0e68d",
+          To: 'cyrusnathaniel.florendo@tup.edu.ph',
+          From: document.getElementById("email").value,
+          Subject: "Portfolio Website",
+          Body: "Name: " + document.getElementById("name").value
+          + "<br> Email: " + document.getElementById("email").value
+          + "<br> Phone: " + document.getElementById("phone").value
+          + "<br> Message: " + document.getElementById("message").value
+        })
+          .then(function (message) {
+            alert("Message Sent Successfully!")
+          });
+      }
+    </script>
     <script src="script.js" type="module"></script>
   </body>
 </html>

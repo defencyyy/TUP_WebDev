@@ -174,8 +174,18 @@ nav {
   align-items: center;
   position: fixed;
   width: 1714px;
-  top: 36px;
+  top: 0;
+  padding: 36px 0;
   z-index: 100;
+  transition: all 500ms ease;
+}
+
+nav.scrolled {
+  background: var(--turq-blue);
+  box-shadow: 0 16px 14px -8px rgba(0, 0, 0, 0.3);
+  border-radius: 0 0 8px 8px;
+  top: 0;
+  padding: 12px 46px;
 }
 
 .nav-logo {
@@ -188,7 +198,7 @@ nav {
 }
 
 .nav-logo:hover {
-  cursor: default;
+  cursor: pointer;
   color: #ff3c78;
   transition: ease 2s;
 }
@@ -201,6 +211,10 @@ nav .nav-links {
   list-style: none;
   letter-spacing: 0.5px;
   margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 nav .nav-links li a:hover {
@@ -350,6 +364,7 @@ section {
 }
 
 .know-about {
+  padding-top: 100px;
   display: flex;
   text-align: center;
   overflow-x: hidden;
@@ -359,7 +374,7 @@ section {
   position: relative;
   color: var(--dirty-white);
   font-family: 'Croissant One', 'sans-serif';
-  font-size: 55px;
+  font-size: 70px;
   gap: 100px;
   align-self: center;
   margin: 15px;
@@ -386,11 +401,11 @@ section {
 }
 
 .know-about .about {
-  filter: drop-shadow(15px 15px 15px black);
   position: relative;
-  width: 40%;
-  border: none;
-  border-radius: 40%;
+  width: 50%;
+  padding: 10px;
+  border: 5px solid var(--dark-green);
+  border-radius: 50%;
 }
 
 .know-more h2 {
@@ -444,6 +459,7 @@ section {
 
 .know-more .content {
   display: relative;
+  text-shadow: 2px 2px #000;
 }
 
 .know-bg {
@@ -503,12 +519,284 @@ section {
 
 .know-languages .middle {
   margin: auto;
-  width: 70%;
+  width: 80%;
 }
 
 .know-biography {
   margin: auto;
-  width: 30%;
+  width: 60%;
   padding-top: 100px;
   min-height: 100vh;
+  text-align: center;
+}
+
+/* Projects */
+.body_project {
+  display: flex;
+  padding: 10px;
+  padding-top: 30px;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #25456A 0%, #D8EAD7 100%);
+}
+
+.wrapper_project {  
+  max-width: 1400px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.wrapper_project h1 {
+  display: flexbox;
+  font-family: 'Croissant One', 'sans-serif';
+  text-align: center;
+  font-size: 70px;
+  color: var(--dirty-white);
+}
+
+.wrapper_project i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+
+.wrapper_project i:active{
+  transform: translateY(-50%) scale(0.85);
+}
+
+.wrapper_project i:first-child {
+  left: -25px;
+  padding-right: 2px;
+  color: #000;
+}
+
+.wrapper_project i:last-child {
+  right: -25px;
+  padding-left: 2px;
+  color: #000;
+}
+
+.wrapper_project .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 0 50px;
+  gap: 700px;
+  border-radius: 15px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel .card {
+  scroll-snap-align: start;
+  height: 900px;
+  width: 1400px;
+  list-style: none;
+  background: #272727;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+.carousel .card .img {
+  background: var(--turq-blue);
+  height: 650px;
+  width: 1200px;
+}
+
+.card .img img {
+  width: 1100px;
+  height: 600px;
+  object-fit: cover;
+  border: 4px solid var(--mint-green);
+}
+
+.carousel .card h2 {
+  font-family: 'Mooli', sans-serif;
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+}
+
+.carousel .card span {
+  color: #c7c7c7;
+  font-size: 1.31rem;
+}
+
+/* Experiences */
+.experience {
+  text-align: center;
+  padding-top: 50px;
+  min-height: 100vh;
+}
+
+.experience .title {
+  font-family: 'Croissant One', 'sans-serif';
+  text-align: center;
+  font-size: 48px;
+  color: var(--dirty-white);
+}
+
+/* Footer */
+footer {
+  background: url("/assets/header-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  object-fit: cover;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 110vh;
+  padding-top: 100px;
+}
+
+
+.know-contact .title {
+  border: var(--turq-blue);
+  border: solid;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  width: 700px;
+  border-radius: 50px;
+}
+
+.know-contact h1 {
+  color: var(--dirty-white);
+  font-family: 'Croissant One', 'sans-serif';
+  font-size: 55px;
+  margin: 15px;
+  text-align: center;
+}
+
+.know-contact .content {
+  padding: 50px;
+  display: flex;
+  
+}
+
+.know-contact .left {
+  width: 70%;
+  height: 40%;
+  margin: 50px;
+  border-radius: 10px;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background: var(--mint-green);
+  color: var(--dark-violet);
+  opacity: 0.9;
+}
+
+.know-contact .left h3 {
+  font-size: 30px;
+  font-family: 'Aref Ruqaa Ink', serif;
+  text-align: center;
+}
+
+.know-contact .left h4 {
+  font-family: "Mooli";
+  font-size: 20px;
+}
+
+.know-contact .right {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.know-contact form {
+  background: var(--mint-green);
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 4rem;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.know-contact form h3 {
+  font-family: 'Aref Ruqaa Ink', serif;
+  text-align: center;
+  color: var(--dark-violet);
+  font-weight: 800;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.know-contact input, form, textarea {
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background: var(--dirty-white);
+  font-size: 16px;
+}
+
+.know-contact button {
+  padding: 15px;
+  background: var(--dark-green);
+  color: var(--dirty-white);
+  font-size: 16px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 30px;
+  font-family: "Mooli", sans-serif;
+}
+
+.know-contact label {
+  color: var(--brown-green);
+  padding: 5px;
+}
+
+.credits {
+  display: flex;
+  margin: 0 20px;
+  justify-content: space-between;
+  font-family: "Mooli", sans-serif;
+  font-size: 18px;
 }
