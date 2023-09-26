@@ -14,7 +14,7 @@
       <div class="wrapper">
         <!-- NAVIGATION -->
         <nav>
-          <div class="nav-logo">defenCy</div>
+          <a href="#Home"><div class="nav-logo">defenCy</div></a>
           <ul class="nav-links">
             <li>
               <a href="#Home">Home</a>
@@ -35,7 +35,7 @@
         </nav>
         
         <!-- HERO SECTION -->
-        <div class="hero-section">
+        <div id="Home" class="hero-section">
           <div class="left">
             <h1>Cyrus<br>Nathaniel<br>Florendo</h1>
           </div>
@@ -79,7 +79,7 @@
     <!-- END OF HEADER -->
 
     <div class="wrapper">
-      <section class="know-more">
+      <section id="About" class="know-more">
         <div class="know-about">
           <img class="about hidden" src="./assets/personal (4).png"
           alt="Image of myself">
@@ -161,7 +161,7 @@
             </div>
             <div class="content">
               <p>A 20-year-old third-year student that is pursuing my passion in being a 
-                programmer with database specialty.
+                programmer with specialty in database programming.
                 <br><br>Being flexible, adaptable and willing-to-learn is a few of my key 
                 strengths that allow me better myself and those I am around with.
               </p>
@@ -173,10 +173,10 @@
 
     <!-- END OF KNOW MORE -->
 
-    <div class="body_project">
+    <div id="Projects" class="body_project">
       <div class="wrapper_project">
         <i id="left" class="fa fa-angle-left"></i>
-        <h1>Projects</h1>
+        <h1 class="hidden-1">Projects</h1>
         <ul class="carousel">
           <li class="card">
             <div class="img"><img src="assets/personal (1).jpg" alt="img" draggable="false"></div>
@@ -201,7 +201,7 @@
     <!-- END OF PROJECTS -->
 
     <div class="wrapper">
-      <section class="experience">
+      <section id="Experience" class="experience hidden-1">
         <div class="title">
           <h1>Experiences</h1>
         </div>
@@ -212,21 +212,21 @@
     </div>
 
 
-    <footer>
+    <footer id="Contact">
       <div class="wrapper">
         <div class="know-contact">
-          <div class="title">
+          <div class="title hidden-1">
             <h1>Contact Information</h1>
           </div>
           <div class="content">
-            <div class="left">
+            <div class="left hidden">
               <h3>Emails:</h3>
               <h4><i class="fa-solid fa-briefcase"></i> Work Email :</h4>
               <p>cysness@gmail.com</p>
               <h4><i class="fa-solid fa-graduation-cap"></i> University Email :</h4>
               <p>cyrusnathaniel.florendo@tup.edu.ph</p>
             </div>  
-            <div class="right">
+            <div class="right hidden">
               <form onsubmit="sendEmail(); reset(); return false;">
                 <h3>Contact Me:</h3>
                 <label for="name"><i class="fa-solid fa-user"></i> Name</label>
@@ -234,7 +234,7 @@
                 <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
                 <input type="email" id="email" required>
                 <label for="phone"><i class="fa-solid fa-phone"></i> Phone</label>
-                <input type="text" id="phone" required>
+                <input type="text" id="phone">
                 <label for="message"><i class="fa-regular fa-comment"></i> Message</label>
                 <textarea id="message" rows="5" required></textarea>
                 <button type="submit"><i class="fa-solid fa-check"></i> Submit</button>
@@ -247,10 +247,10 @@
     <div class="wrapper">
       <div class="credits">
         <div class="left">
-          <p>Made By Cyrus Nathaniel P. Florendo | © 2023</p>
+          <p>Made By Cyrus Nathaniel P. Florendo | BSIS-NS-3A-M</p>
         </div>
         <div class="right">
-          <p>Made for WebDev | BSIS-NS-3A-M</p>
+          <p>Made for WebDev | © 2023</p>
         </div>
       </div>
     </div>
