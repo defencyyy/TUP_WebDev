@@ -526,7 +526,7 @@ section {
   margin: auto;
   width: 60%;
   padding-top: 100px;
-  min-height: 100vh;
+  min-height: 65vh;
   text-align: center;
 }
 
@@ -534,7 +534,7 @@ section {
 .body_project {
   display: flex;
   padding: 10px;
-  padding-top: 30px;
+
   align-items: center;
   justify-content: center;
   min-height: 100vh;
