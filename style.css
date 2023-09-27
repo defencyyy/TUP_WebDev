@@ -421,10 +421,17 @@ section {
   color: #FFF;
   font-family: 'Mooli', sans-serif;
   font-size: 30px;
-  margin: 10px;
-  padding-top: 15px;
-  padding-bottom: 10px;
-  text-align: left;
+  margin: 5px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.know-more h4 {
+  color: #FFF;
+  font-family: 'Aref Ruqaa Ink', serif;
+  font-size: 27px;
+  margin-top: 0;
+  text-align: center;
 }
 
 .know-more p {
@@ -439,9 +446,13 @@ section {
   color: #FFF;
   font-family: 'Poppins', 'sans-serif';
   font-size: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin: 10px;
+  list-style: none;
+  text-align: center;
+}
+
+.know-more hr {
+  margin-top: 40px;
+  width: 80%;
 }
 
 .know-more .know-icons {
@@ -513,21 +524,21 @@ section {
 
 .know-languages {
   display: flex;
-  margin: 50px;
-  padding-top: 100px;
 }
 
 .know-languages .middle {
   margin: auto;
-  width: 80%;
+
 }
 
 .know-biography {
   margin: auto;
-  width: 60%;
-  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 65vh;
-  text-align: center;
+  text-align: left;
+  width: 50%;
 }
 
 /* Projects */
@@ -581,12 +592,14 @@ section {
   left: -25px;
   padding-right: 2px;
   color: #000;
+  z-index: 5;
 }
 
 .wrapper_project i:last-child {
   right: -25px;
   padding-left: 2px;
   color: #000;
+  z-index: 5;
 }
 
 .wrapper_project .carousel{
@@ -671,6 +684,8 @@ section {
 .experience .title {
   font-family: 'Croissant One', 'sans-serif';
   text-align: center;
+  align-self: center;
+  justify-content: center;
   font-size: 48px;
   color: var(--dirty-white);
 }
