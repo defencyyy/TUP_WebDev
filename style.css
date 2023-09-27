@@ -111,6 +111,10 @@ body {
   margin: 0 auto;
 }
 
+nav.mobile-nav, .mobile-menu {
+  display: none;
+}
+
 /* Buttons */
 .btn {
   border-radius: 30px;
@@ -277,6 +281,8 @@ nav .nav-links li a {
 .hero-section .left {
   padding-bottom: 100px;
   text-align: left;
+  display: flex;
+  position: relative;
 }
 
 .hero-section .left h1 {
@@ -524,11 +530,11 @@ section {
 
 .know-languages {
   display: flex;
+  text-align: center;
 }
 
 .know-languages .middle {
   margin: auto;
-
 }
 
 .know-biography {
@@ -701,8 +707,8 @@ footer {
   width: 100%;
   height: 110vh;
   padding-top: 100px;
+  padding-bottom: 50px;
 }
-
 
 .know-contact .title {
   border: var(--turq-blue);
