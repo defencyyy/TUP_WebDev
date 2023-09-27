@@ -1,10 +1,92 @@
-@media screen and (max-width: 1200px) {
-    #desktop-nav {
-        display: none;
-    }
-    #hamburger-nav {
-        display: flex;
-    }
+@media screen and (max-width: 1100px) {
+  .wrapper {
+    padding: 0 50px;
+  }
+
+  nav {
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 36px 70px;
+  }
+
+  nav.scrolled {
+    padding: 16px 70px;
+  }
+
+  nav .nav-links {
+    gap: 40px;
+    letter-spacing: 0;
+  }
+
+  header, .hero-section,
+  header .wrapper {
+    max-height: 1500px;
+  }
+
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .hero-section .left {
+    padding-top: 50px;
+    width: 100%;
+  }
+
+  .hero-section .left h1 {
+    font-size: 90px;
+  }
+
+  .hero-section .right {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 120px;
+  }
+
+  .hero-socials {
+    margin-top: 50px;
+    width: 70%;
+    margin-left: 150px;
+  }
+
+  .hero-socials .bg {
+    width: 100%;
+    border-radius: 20px 20px 20px 20px;
+    background: #83826f;
+  }
+
+  .know-more {
+    flex-direction: column;
+    align-items: stretch;
+    width: 60%;
+  }
+
+  .know-about .about {
+    width: 450px;
+    height: 450px;
+  }
+
+  .know-about .bg {
+    height: 232px;
+  }
+
+  .know-skills .slogo {
+    position: relative;
+  }
+
+  .know-skills .right {
+    padding-left: 30px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .hero-section .left h1 {
+    font-size: 40px;
+    text-align: center;
+    left: 0;
+  }
 }
 
 @media screen and (max-width: 900px) {

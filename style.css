@@ -173,7 +173,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  width: 1714px;
+  width: 90%;
   top: 0;
   padding: 36px 0;
   z-index: 100;
@@ -210,7 +210,7 @@ nav .nav-links {
   gap: 58px;
   list-style: none;
   letter-spacing: 0.5px;
-  margin: 0;
+  padding: 0 36px;
 }
 
 a {
@@ -227,7 +227,7 @@ nav .nav-links li a:hover {
 
 nav .nav-links li a {
   color: rgb(32, 32, 32);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Mooli';
   font-size: 20px;
   text-decoration: none;
 }
