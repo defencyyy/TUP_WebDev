@@ -1,19 +1,598 @@
-@media screen and (max-width: 1200px) {
-    #desktop-nav {
-        display: none;
-    }
-    #hamburger-nav {
-        display: flex;
-    }
+@media screen and (max-width: 1100px) {
+  .wrapper {
+    padding: 0 50px;
+  }
+
+  /* NAV SECTION */
+
+  nav {
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 36px 70px;
+  }
+
+  nav.scrolled {
+    padding: 16px 70px;
+  }
+
+  nav .nav-links {
+    gap: 40px;
+    letter-spacing: 0;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+    /* HERO SECTION */
+
+  header, .hero-section,
+  header .wrapper {
+    max-height: 1500px;
+  }
+
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .hero-section .left {
+    padding-top: 50px;
+    width: 100%;
+  }
+
+  .hero-section .left h1 {
+    font-size: 90px;
+  }
+
+  .hero-section .right {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 120px;
+  }
+
+  .hero-socials {
+    margin-top: 50px;
+    width: 70%;
+    margin-left: 150px;
+  }
+
+  .hero-socials .bg {
+    width: 100%;
+    border-radius: 20px 20px 20px 20px;
+    background: #83826f;
+  }
+
+  /* ABOUT SECTION */
+
+  .know-more {
+    flex-direction: column;
+    align-items: stretch;
+    width: 60%;
+  }
+
+  .know-about .about {
+    width: 450px;
+    height: 450px;
+  }
+
+  .know-about .bg {
+    height: 232px;
+    font-size: 30px;
+  }
+
+    /* Skills */
+  .know-skills .right {
+    padding-left: 30px;
+    padding-top: 0;
+    margin: 20px;
+    flex-direction: column;
+  }
+
+  .slogo {
+    padding: 3px;
+  }
+
+  .slogo:nth-child(2) {
+    padding-top: 0;
+    padding-left: 50px;
+  }
+  
+  .slogo:nth-child(4) {
+    padding-top: 0;
+    padding-left: 50px;
+  }
+
+    /* Education */
+  .know-education {
+    margin: 0;
+    min-height: 80vh;
+  }
+
+  .know-education .left {
+    margin: 0;
+  }
+
+  .know-education img {
+    margin-top: 10vh;
+    width: 30vw;
+  }
+
+  .know-education .right {
+    padding-left: 5px;
+  }
+
+  /* PROJECTS SECTION */
+  .wrapper_project {  
+    max-width: 850px;
+    min-height: 70vh;
+  }
+  
+  .carousel .card {
+    height: 750px;
+    width: 850px;
+  }
+
+  .carousel .card .img {
+    height: 500px;
+    width: 800px;
+  }
+  
+  .card .img img {
+    height: 350px;
+    width: 750px;
+  }
+
+  /* EXPERIENCE SECTION */
+  .experience {
+    width: 60%;
+  }
+
+  /* FOOTER SECTION */
+  footer {
+    display: flex;
+    height: 80vh;
+  }
+
+  .know-contact .content {
+    padding: 50px 0 0 0;
+  }
+
+  .know-contact .title {
+    width: 75%;
+  }
+
+  .know-contact .left {
+    padding: 30px;
+    margin: 0;
+  }
+
+  .know-contact .right {
+    padding: 0;
+    margin: 0;
+  }
+
+  .know-contact form {
+    padding: 30px;
+    margin: 0;
+  }
+
+  .credits {
+    width: 55%;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  nav {
+    display: none;
+  }
+
+  nav.mobile-nav {
+    display: flex;
+  }
+
+  nav.mobile-nav.scrolled {
+    padding: 8px 100px;
+    background: var(--turq-blue);
+    box-shadow: 0 9px 21px -5px rgba(0, 0, 0, 0.3);
+  }
+
+  .mobile-menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 100%;
+    background: var(--dark-violet);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    transition: all 400ms ease;
+  }
+
+  .mobile-menu.active {
+    left: 0;
+  }
+
+  .mobile-menu .close-icon {
+    position: fixed;
+    top: 42px;
+    right: 70px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 400ms ease;
+  }
+
+  .mobile-menu.active .close-icon {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .mobile-menu ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .mobile-menu ul li {
+    margin: 30px 0;
+    text-align: center;
+  }
+
+  .mobile-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    padding: 0 32px;
+  }
+
+  nav .nav-logo {
+    font-size: 20px;
+  }
+
+  .hero-section {
+    width: 100%;
+  }
+
+  .hero-section .left {
+    padding-bottom: 0;
+  }
+
+  .hero-section .left h1 {
+    display: flex;
+    font-size: 40px;
+    padding-top: 105px;
+    padding-bottom: 0;
+    margin: 0;
+  }
+  
+  .hero-section .right {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 50px;
+  }
+
+  .hero-section .right h1 {
+    font-size: 20px;
+  }
+  
+  .hero-section .right h2 {
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  
+  .hero-section .right p {
+    font-size: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
+    letter-spacing: 1.6px;
+  }
+
+  .hero-buttons {
+    margin-top: 20px;
+  }
+
+  .btn {
+    letter-spacing: 0;
+  }
+
+  .hero-socials {
+    padding-top: 3px;
+    display: flex;
+    margin: 20px;
+    position: relative;
+    align-self: center;
+    width: 90%;
+    height: 50%;
+  }
+
+  .hero-socials .bg {
+    margin-bottom: 50px;
+  }
+
+  .hero-socials h3 {
+    font-size: 15px;
+    padding: 0 10px 0 10px;
+  }
+
+  .hero-socials h4 {
+    display: none;
+  }
+
+  .hero-socials img {
+    margin-left: 0;
+  }
+
+  /* ABOUT SECTION */
+  .know-more {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .know-about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .know-about .about {
+    width: 80vw;
+    height: 80vw;
+  }
+
+  .know-about .bg {
+    height: 60px;
+    width: 80vw;
+    margin: 15px 0;
+  }
+
+  .know-about h1 {
+    font-size: 40px;
+    gap: 0;
+    margin: 0;
+  }
+
+  .know-more h2 {
+    color: #FFF;
+    font-family: 'Croissant One', sans-serif;
+    font-size: 20px;
+    padding-top: 8px;
+    letter-spacing: 2px;
+  }
+  
+  .know-more h3 {
+    width: 80vw;
+    color: #FFF;
+    font-family: 'Mooli', sans-serif;
+    font-size: 15px;
+    margin: 5px;
+    padding-top: 40px;
+    text-align: center;
+  }
+  
+  .know-more h4 {
+    width: 80vw;
+    color: #FFF;
+    font-family: 'Aref Ruqaa Ink', serif;
+    font-size: 15px;
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  .know-more p {
+    width: 80vw;
+    color: #FFF;
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 15px;
+    padding-top: 10px;
+    margin: 30px;
+  }
+  
+  .know-more li {
+    color: #FFF;
+    font-family: 'Poppins', 'sans-serif';
+    width: 80vw;
+    font-size: 14px;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .know-more .know-icons {
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+  }
+  
+  .know-bg {
+    width: 60vw;
+    height: 41px;
+  }
+
+    /* Skills */
+  .know-skills {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .know-skills .right {
+    width: 40vw;
+    padding-left: 10px;
+    padding-top: 0;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .know-skills .right img {
+    width: 50px;
+    align-content: center;
+  }
+
+  .slogo {
+    padding: 3px;
+  }
+
+  .slogo:nth-child(2) {
+    padding-top: 20px;
+    padding-left: 0;
+  }
+  
+  .slogo:nth-child(4) {
+    padding-top: 20px;
+    padding-left: 0;
+  }
+
+    /* Education */
+  .know-education {
+    width: 40vh;
+  }
+
+  .know-education .left {
+    margin: 0;
+    display: none;
+  }
+
+  .know-education img {
+    margin-top: 10vh;
+    width: 40vw;
+  }
+
+  .know-education .right {
+    padding: 0;
+    margin: 0;
+  }
+
+  .know-more hr {
+    width: 90%;
+  }
+  
+  .know-languages {
+    width: 30vh;
+    margin: 10px;
+  }
+
+  .know-languages p {
+    margin: 30px 0 0 0;
+  }
+  
+  .know-biography {
+    width: 40vh;
+    margin: 10px;
+  }
+
+  /* PROJECTS SECTION */
+  .wrapper_project {  
+    max-width: 320px;
+  }
+
+  .wrapper_project h1 {
+    font-size: 30px;
+  }
+  
+  .carousel .card {
+    height: 400px;
+    width: 320px;
+  }
+
+  .carousel .card .img {
+    height: 220px;
+    width: 315px;
+  }
+  
+  .card .img img {
+    height: 200px;
+    width: 310px;
+  }
+
+  .carousel .card h2 {
+    font-size: 1rem;
+  }
+
+  .carousel .card span {
+    font-size: 0.8rem;
+  }
+
+  /* EXPERIENCE SECTION */
+  .experience {
+    width: 85vw;
+    text-align: center;
+  }
+
+  .experience h1 {
+    font-size: 30px;
+  }
+
+  /* FOOTER SECTION */
+  footer {
+    height: 100%;
+  }
+  
+  .know-contact .title {
+    margin-bottom: 50px;
+  }
+
+  .know-contact h1 {
+    font-size: 30px;
+  }
+
+  .know-contact .content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 0;
+  }
+
+  .know-contact .title {
+    width: 75%;
+  }
+
+  .know-contact .left {
+    height: 20%;
+    padding: 20px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .know-contact .right {
+    padding: 20px 0 0 0 ;
+    width: 100%;
+    margin: 0;
+  }
+
+  .know-contact form {
+    padding: 30px;
+    margin: 0;
+  }
+
+  .credits {
+    width: 80vw;
+    margin: 0;
+    font-size: 7px;
+  }
+
 }
 
 @media screen and (max-width: 900px) {
     .wrapper_project .carousel {
       grid-auto-columns: calc((100% / 2) - 9px);
     }
-  }
+
   @media screen and (max-width: 600px) {
     .wrapper_project .carousel {
       grid-auto-columns: 100%;
     }
   }
+}

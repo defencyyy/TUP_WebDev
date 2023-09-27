@@ -111,6 +111,10 @@ body {
   margin: 0 auto;
 }
 
+nav.mobile-nav, .mobile-menu {
+  display: none;
+}
+
 /* Buttons */
 .btn {
   border-radius: 30px;
@@ -173,7 +177,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  width: 1714px;
+  width: 90%;
   top: 0;
   padding: 36px 0;
   z-index: 100;
@@ -210,7 +214,7 @@ nav .nav-links {
   gap: 58px;
   list-style: none;
   letter-spacing: 0.5px;
-  margin: 0;
+  padding: 0 36px;
 }
 
 a {
@@ -227,7 +231,7 @@ nav .nav-links li a:hover {
 
 nav .nav-links li a {
   color: rgb(32, 32, 32);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Mooli';
   font-size: 20px;
   text-decoration: none;
 }
@@ -277,6 +281,8 @@ nav .nav-links li a {
 .hero-section .left {
   padding-bottom: 100px;
   text-align: left;
+  display: flex;
+  position: relative;
 }
 
 .hero-section .left h1 {
@@ -421,10 +427,17 @@ section {
   color: #FFF;
   font-family: 'Mooli', sans-serif;
   font-size: 30px;
-  margin: 10px;
-  padding-top: 15px;
-  padding-bottom: 10px;
-  text-align: left;
+  margin: 5px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.know-more h4 {
+  color: #FFF;
+  font-family: 'Aref Ruqaa Ink', serif;
+  font-size: 27px;
+  margin-top: 0;
+  text-align: center;
 }
 
 .know-more p {
@@ -439,9 +452,13 @@ section {
   color: #FFF;
   font-family: 'Poppins', 'sans-serif';
   font-size: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin: 10px;
+  list-style: none;
+  text-align: center;
+}
+
+.know-more hr {
+  margin-top: 40px;
+  width: 80%;
 }
 
 .know-more .know-icons {
@@ -513,28 +530,28 @@ section {
 
 .know-languages {
   display: flex;
-  margin: 50px;
-  padding-top: 100px;
+  text-align: center;
 }
 
 .know-languages .middle {
   margin: auto;
-  width: 80%;
 }
 
 .know-biography {
   margin: auto;
-  width: 60%;
-  padding-top: 100px;
-  min-height: 100vh;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 65vh;
+  text-align: left;
+  width: 50%;
 }
 
 /* Projects */
 .body_project {
   display: flex;
   padding: 10px;
-  padding-top: 30px;
+
   align-items: center;
   justify-content: center;
   min-height: 100vh;
@@ -581,12 +598,14 @@ section {
   left: -25px;
   padding-right: 2px;
   color: #000;
+  z-index: 5;
 }
 
 .wrapper_project i:last-child {
   right: -25px;
   padding-left: 2px;
   color: #000;
+  z-index: 5;
 }
 
 .wrapper_project .carousel{
@@ -671,6 +690,8 @@ section {
 .experience .title {
   font-family: 'Croissant One', 'sans-serif';
   text-align: center;
+  align-self: center;
+  justify-content: center;
   font-size: 48px;
   color: var(--dirty-white);
 }
@@ -686,8 +707,8 @@ footer {
   width: 100%;
   height: 110vh;
   padding-top: 100px;
+  padding-bottom: 50px;
 }
-
 
 .know-contact .title {
   border: var(--turq-blue);
