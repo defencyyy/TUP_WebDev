@@ -374,7 +374,7 @@ section {
   width: 100%;
   display: flex;
   text-align: center;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .know-about h1 {
@@ -410,6 +410,7 @@ section {
 .know-about .about {
   position: relative;
   width: 50%;
+  height: 50%;
   padding: 10px;
   border: 5px solid var(--dark-green);
   border-radius: 50%;
@@ -427,7 +428,7 @@ section {
 .know-more h3 {
   color: #FFF;
   font-family: 'Mooli', sans-serif;
-  font-size: 30px;
+  font-size: 35px;
   margin: 5px;
   padding-top: 40px;
   text-align: center;
@@ -436,7 +437,7 @@ section {
 .know-more h4 {
   color: #FFF;
   font-family: 'Aref Ruqaa Ink', serif;
-  font-size: 27px;
+  font-size: 32px;
   margin-top: 0;
   text-align: center;
 }
@@ -444,7 +445,7 @@ section {
 .know-more p {
   color: #FFF;
   font-family: 'Poppins', 'sans-serif';
-  font-size: 20px;
+  font-size: 1.5rem;
   padding-top: 10px;
   margin: 30px;
 }
@@ -501,7 +502,7 @@ section {
 }
 
 .know-skills .right img {
-  width: 150px;
+  width: 9vw;
   align-content: center;
 }
 
@@ -523,7 +524,7 @@ section {
 }
 
 .know-education img {
-  width: 60vh;
+  width: 30vw;
   border: none;
   filter: drop-shadow(5px 5px 10px black);
   border-radius: 20px;

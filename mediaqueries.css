@@ -25,6 +25,10 @@
     overflow-x: hidden;
   }
 
+  header {
+    width: 105%
+  }
+
     /* HERO SECTION */
 
   header, .hero-section,
@@ -38,25 +42,26 @@
 
   .hero-section .left {
     padding-top: 50px;
+    padding-left: 20px;
     width: 100%;
   }
 
   .hero-section .left h1 {
-    font-size: 90px;
+    font-size: 5vh;
   }
 
   .hero-section .right {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 95%;
     padding-bottom: 120px;
   }
 
   .hero-socials {
     margin-top: 50px;
-    width: 70%;
-    margin-left: 150px;
+    width: 100%;
+    margin-left: 0;
   }
 
   .hero-socials .bg {
@@ -70,25 +75,39 @@
   .know-more {
     flex-direction: column;
     align-items: stretch;
-    width: 60%;
+    width: 100%;
+  }
+
+  .know-about {
+    height: 100%;
+    overflow-y: hidden;
   }
 
   .know-about .about {
-    width: 450px;
-    height: 450px;
+    width: 40vw;
+    height: 40vw;
   }
 
   .know-about .bg {
     height: 232px;
     font-size: 30px;
+    margin: 10px;
   }
 
     /* Skills */
+  .know-skills {
+    margin: 0;
+  }
+
   .know-skills .right {
-    padding-left: 30px;
+    padding-left: 10px;
     padding-top: 0;
     margin: 20px;
     flex-direction: column;
+  }
+
+  .know-skills .right img {
+    width: 80px;
   }
 
   .slogo {
@@ -117,7 +136,7 @@
 
   .know-education img {
     margin-top: 10vh;
-    width: 30vw;
+    width: 20vw;
   }
 
   .know-education .right {
@@ -126,34 +145,33 @@
 
   /* PROJECTS SECTION */
   .wrapper_project {  
-    max-width: 850px;
+    max-width: 700px;
     min-height: 70vh;
   }
   
   .carousel .card {
-    height: 750px;
-    width: 850px;
+    height: 500px;
+    width: 690px;
   }
 
   .carousel .card .img {
-    height: 500px;
-    width: 800px;
+    height: 270px;
+    width: 680px;
   }
   
   .card .img img {
-    height: 350px;
-    width: 750px;
+    height: 250px;
+    width: 660px;
   }
 
   /* EXPERIENCE SECTION */
   .experience {
-    width: 60%;
+    width: 100%;
   }
 
   /* FOOTER SECTION */
   footer {
-    display: flex;
-    height: 80vh;
+    height: 100%;
   }
 
   .know-contact .content {
@@ -180,12 +198,13 @@
   }
 
   .credits {
-    width: 55%;
+    width: 100%;
     font-size: 15px;
   }
 }
 
 @media screen and (max-width: 900px) {
+
   nav {
     display: none;
   }
@@ -251,7 +270,13 @@
 
 @media screen and (max-width: 500px) {
   .wrapper {
-    padding: 0 32px;
+    padding: 0 5vw;
+    margin: 0 15px;
+  }
+
+  nav.mobile-nav {
+    display: flex;
+    justify-content: space-between;
   }
 
   nav .nav-logo {
@@ -269,7 +294,7 @@
   .hero-section .left h1 {
     display: flex;
     font-size: 40px;
-    padding-top: 105px;
+    padding-top: 50px;
     padding-bottom: 0;
     margin: 0;
   }
@@ -279,7 +304,8 @@
     flex-direction: column;
     margin: 0;
     padding: 0;
-    padding-bottom: 50px;
+    padding-bottom: 1vw;
+    margin-top: 50px;
   }
 
   .hero-section .right h1 {
@@ -300,11 +326,12 @@
   }
 
   .hero-buttons {
-    margin-top: 20px;
+    margin-top: 50px;
   }
 
   .btn {
     letter-spacing: 0;
+    margin: 10px 10px;
   }
 
   .hero-socials {
@@ -344,6 +371,7 @@
   .know-about {
     display: flex;
     flex-direction: column;
+    height: 120vh;
   }
 
   .know-about .about {
@@ -396,7 +424,7 @@
     font-family: 'Poppins', 'sans-serif';
     font-size: 15px;
     padding-top: 10px;
-    margin: 30px;
+    margin: 0;
   }
   
   .know-more li {
@@ -431,8 +459,8 @@
   .know-skills .right {
     width: 40vw;
     padding-left: 10px;
-    padding-top: 0;
-    margin: 20px;
+    padding-top: 10px;
+    margin: 0;
     display: flex;
     flex-direction: row;
   }
@@ -546,7 +574,11 @@
   }
 
   .know-contact h1 {
-    font-size: 30px;
+    font-size: 25px;
+  }
+
+  .know-contact p {
+    font-size: 10px;
   }
 
   .know-contact .content {
