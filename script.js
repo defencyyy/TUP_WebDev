@@ -37,9 +37,6 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
-const hiddenElements = document.querySelectorAll('.hero-section .right');
-hiddenElements.forEach((el) => observer.observe(el));
-
 const hiddenElements2 = document.querySelectorAll('.hero-section .left');
 hiddenElements2.forEach((el) => observer.observe(el));  
 
